@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Background Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styling -->
+</head>
+<body>
+
+<div class="container">
+    <h1>My Background Form</h1>
+
+    <form id="backgroundForm">
+        <label for="educationTitle">Education Title:</label>
+        <input type="text" id="educationTitle" name="educationTitle" required>
+
+        <label for="educationDescription">Education Description:</label>
+        <textarea id="educationDescription" name="educationDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addEducation()">Add Education</button>
+
+        <div id="educationsList"></div>
+
+        <hr>
+
+        <label for="hobbyName">Hobby Name:</label>
+        <input type="text" id="hobbyName" name="hobbyName" required>
+
+        <button type="button" onclick="addHobby()">Add Hobby</button>
+
+        <div id="hobbiesList"></div>
+
+        <hr>
+
+        <label for="interestTitle">Interest Title:</label>
+        <input type="text" id="interestTitle" name="interestTitle" required>
+
+        <label for="interestDescription">Interest Description:</label>
+        <textarea id="interestDescription" name="interestDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addInterest()">Add Interest</button>
+
+        <div id="interestsList"></div>
+
+        <button type="submit">Submit Background</button>
+    </form>
+</div>
+
+<script src="script.js" defer></script> <!-- Link your script.js file -->
+</body>
+</html>

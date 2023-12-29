@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="updation.css"> <!-- Link your CSS file for styling -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Update Profile</h1>
+
+    <div class="tabs">
+        <div class="tab" onclick="openTab('portfolio')">Portfolio</div>
+        <div class="tab" onclick="openTab('background')">My Background</div>
+        <div class="tab" onclick="openTab('contact')">Contact</div>
+    </div>
+
+    <div id="portfolio" class="tab-content">
+        <!-- Content for the Portfolio tab -->
+        <h2>Portfolio</h2>
+        <p>Add your portfolio content here.</p>
+    </div>
+
+    <div id="background" class="tab-content" style="display: none;">
+        <!-- Content for the My Background tab -->
+        <h2>My Background</h2>
+        <p>Add details about your background here.</p>
+    </div>
+
+    <div id="contact" class="tab-content" style="display: none;">
+        <!-- Content for the Contact tab -->
+        <h2>Contact</h2>
+        <p>Add your contact information here.</p>
+    </div>
+</div>
+
+<script>
+    function openTab(tabName) {
+        var i, tabContent;
+        tabContent = document.getElementsByClassName("tab-content");
+
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+
+        document.getElementById(tabName).style.display = "block";
+    }
+</script>
+
+</body>
+</html>

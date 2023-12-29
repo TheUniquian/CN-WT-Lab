@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styling -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Portfolio Form</h1>
+
+    <form id="portfolioForm">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" name="projectName" required>
+
+        <label for="projectDescription">Project Description:</label>
+        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addProject()">Add Project</button>
+
+        <div id="projectsList"></div>
+
+        <hr>
+
+        <label for="internshipTitle">Internship Title:</label>
+        <input type="text" id="internshipTitle" name="internshipTitle" required>
+
+        <label for="internshipDescription">Internship Description:</label>
+        <textarea id="internshipDescription" name="internshipDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addInternship()">Add Internship</button>
+
+        <div id="internshipsList"></div>
+
+        <hr>
+
+        <label for="skillName">Skill Name:</label>
+        <input type="text" id="skillName" name="skillName" required>
+
+        <button type="button" onclick="addSkill()">Add Skill</button>
+
+        <div id="skillsList"></div>
+
+        <hr>
+
+        <label for="experienceTitle">Experience Title:</label>
+        <input type="text" id="experienceTitle" name="experienceTitle" required>
+
+        <label for="experienceDescription">Experience Description:</label>
+        <textarea id="experienceDescription" name="experienceDescription" rows="4" required></textarea>
+
+        <button type="button" onclick="addExperience()">Add Experience</button>
+
+        <div id="experiencesList"></div>
+
+        <button type="submit">Submit Portfolio</button>
+    </form>
+</div>
+
+<script src="portfolio.js" defer></script> <!-- Link your script.js file -->
+</body>
+</html>
